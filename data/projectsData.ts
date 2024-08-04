@@ -7,21 +7,20 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Munchyroll',
+    description: `A simple and fast anime streaming website made in NextJS. The reason I made this was to figure out a way to watch anime while stuck at home`,
+    href: 'blog/munchyroll',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Calculator App',
+    description: `A web app made with HTML, TailwindCSS, and Javascript to bring users a functioning calculator that has 2 themes and responsive design.`,
+    href: 'https://github.com/Jeydin21/Calculator-App',
   },
+  {
+    title: 'Crypto Comparer',
+    description: `Tracking cryptocurrencies in a Flask web app. This was a project done by high school students`,
+    href: 'blog/crypto-comparer',
+  }
 ]
 
 export default projectsData

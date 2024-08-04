@@ -1,25 +1,25 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'Jeydin\'s Blog',
+  author: 'Jeydin Pham',
+  headerTitle: 'J21 Blog',
+  description: 'This blog is created with NextJS, TailwindCSS, and Markdown',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://blog.j21.dev',
+  siteRepo: 'https://github.com/Jeydin21/tailwind-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  x: 'https://twitter.com/x',
+  // mastodon: 'https://mastodon.social/@mastodonuser',
+  email: 'jeydin@j21.dev',
+  github: 'https://github.com/Jeydin21',
+  x: 'https://twitter.com/Jeydin21',
   // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
+  // facebook: 'https://facebook.com',
+  youtube: 'https://www.youtube.com/@Jeydin21',
+  linkedin: 'https://www.linkedin.com/in/jeydinpham',
+  // threads: 'https://www.threads.net',
+  instagram: 'https://www.instagram.com/Jeydin21',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -48,7 +48,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    provider: '',
   },
   comments: {
     // If you want to use an analytics provider you have to add it to the
@@ -63,7 +63,7 @@ const siteMetadata = {
       repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
       category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
       categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
-      mapping: 'pathname', // supported options: pathname, url, title
+      mapping: 'title', // supported options: pathname, url, title
       reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
       // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
       metadata: '0',
@@ -75,7 +75,7 @@ const siteMetadata = {
       // If the theme option above is set to 'custom`
       // please provide a link below to your custom theme css file.
       // example: https://giscus.app/themes/custom_example.css
-      themeURL: '',
+      // themeURL: '',
       // This corresponds to the `data-lang="en"` in giscus's configurations
       lang: 'en',
     },
