@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Jeydin\'s Blog',
   author: 'Jeydin Pham',
   headerTitle: 'J21 Blog',
-  description: 'This blog is created with NextJS, TailwindCSS, and Markdown',
+  description: 'My personal blog made with NextJS and written in Markdown 😍',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://blog.j21.dev',

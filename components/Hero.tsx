@@ -1,27 +1,41 @@
 import Link from 'next/link'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
 import siteMetadata from '@/data/siteMetadata'
+import Github from '../components/Github'
 
 export default function Hero() {
   return (
-    <div className="my-6 flex flex-col items-center gap-x-12 xl:mb-12 xl:flex-row">
-      <div className="max-w-2xl pt-6">
-        <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-          Hi, I&apos;m Jeydin Pham
+    <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+        <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+          I'm{' '}
+          <span className="dark:from-secondary-700 dark:to-secondary-400 mt-10 bg-gradient-to-r from-primary-700 to-primary-400 bg-clip-text text-center text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl lg:text-6xl">
+            Jeydin Pham
+          </span>{' '}
+          👋
         </h1>
-        <h2 className="prose text-lg text-gray-600 dark:text-gray-400">
-          Welcome to my blog, where I ramble about random things. I am a student looking to major in
-          web development in the future. In my free time, I like developing{' '}
-          <Link href={'/projects'}>side projects</Link> and <Link href={'/blog'}>blogging</Link>{' '}
-          about them. Have a good read!
-        </h2>
-      </div>
-      <div className="mx-2 my-12 flex w-[300px] items-center justify-center sm:w-[400px] md:w-[550px]">
-        {siteMetadata.newsletter?.provider && (
-          <div className="flex items-center justify-center pt-4">
-            <NewsletterForm title="Subscribe to my newsletter!" />
-          </div>
-        )}
+        <div className="dark:text-grey text-gray mb-8 mt-4 text-base">
+          <p>
+            An aspiring web development major interested in component-based architecture frameworks
+          </p>
+          <p className="dark:text-grey text-gray mb-8 mt-4 text-sm">
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">🥇 NextJS</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">❤️ React</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">🛠️ Javascript</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">📚 Typescript</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">📦 NodeJS</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">🐍 Python</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">🧊 HTML</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">🍡 CSS</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">🔥 Vercel</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">📘 TailwindCSS</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">🕰️ Git</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">🚃 NPM</span>
+            <span className="mr-3 inline-block whitespace-nowrap pt-3">🍽️ APIs</span>
+          </p>
+        </div>
+
+        <Github />
       </div>
     </div>
   )
