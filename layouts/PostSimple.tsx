@@ -26,11 +26,11 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
       <article>
         <div>
           <header>
-            <div className="space-y-2 py-6 border-b border-gray-200 dark:border-gray-700">
-                <div className="flex flex-wrap">
-                  {tags.map((tag) => (
-                    <Tag key={tag} text={tag} />
-                  ))}
+            <div className="space-y-2 border-b border-gray-200 py-6 dark:border-gray-700">
+              <div className="flex flex-wrap">
+                {tags.map((tag) => (
+                  <Tag key={tag} text={tag} />
+                ))}
               </div>
               <div>
                 <PageTitle>{title}</PageTitle>
